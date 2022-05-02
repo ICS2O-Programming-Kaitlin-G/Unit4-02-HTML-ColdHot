@@ -1,1 +1,2 @@
 # Unit4-02-HTML-ColdHot
+[![GitHub's Super Linter](https://github.com/ICS2O-Programming-Kaitlin-G/Unit4-02-HTML-ColdHot/actions/workflows/main.yml/badge.svg)](https://github.com/ICS2O-Programming-Kaitlin-G/Unit4-02-HTML-ColdHot/actions)

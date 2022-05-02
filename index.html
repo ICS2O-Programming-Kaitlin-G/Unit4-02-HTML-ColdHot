@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- ICS2O-Unit4-01-HTML-GuessMyNumber -->
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This program will declare/judge whether it is cold or not depending on the temperature that the user inputs in degrees celsius. ">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Katie G">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+    
+    <!-- For the Favicon on this page -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet"href="https://code.getmdl.io/1.3.0/material.light_green-pink.min.css"/> 
+    <title>Temperature exists, and oh boy the people of the earth need to be told from an impartial source whether or not it is hot or cold outside because they just do not seem to know.</title>
+
+    <!-- Javascript script file search lookup command that will enable my beloved computer program to do the thing :D -->
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- Google's MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <div class = "mdl-layout mdl-js-layout--fixed-header">
+    
+    <!-- Container for web page content -->
+    <main class = "mdl-layout__content" style = "padding-left:10px">
+      
+      <!-- Header, more specifically the largest header possible, primarily for visual structural aesthetic. -->
+      <h1>Temperature exists, and oh boy the people of the earth need to be told from an impartial source whether or not it is hot or cold outside because they just do not seem to know.</h1>
+
+      <!-- casual text explaining the function of the website because this is how i like to do some websites -->
+      <p>humans require to be told whether it is warm or cold outside. even though they may have made the temperature measurement system of celsius, they do not seem to understand it all that well. so, this computer program will make sure that the humans always know whether or not it is hot or cold.</p>
+
+      <!-- form to collect the temperature in celsius, MDL style -->
+      <form action="javascript:judgeCelsiusClicked">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-celsius" step="0.01">
+          <label class="mdl-textfield__label" for="user-celsius">Temp in Celsius</label>
+          <span class="mdl-textfield__error">This is not a valid form of celsius!!!!</span>
+        </div>
+        <br>
+
+        <!-- the button that will initiate the temperature judgement process, mdl style -->
+        <button onclick="judgeCelsiusClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Judge Temperature
+        </button>
+      </form>
+      <br>
+
+      <!-- the div element that will display the information back to the user -->
+      <div id="judged-temperature"></div>
+    </main>
+    </div>
+  </body>
+</html>
